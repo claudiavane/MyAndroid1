@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/titleSearchText"
+        android:text="@string/label_titleSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_large_material" />
+
+    <TextView
+        android:id="@+id/labelCity"
+        android:text="@string/label_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></Spinner>
+
+    <TextView
+        android:id="@+id/labelTypeHouse"
+        android:text="@string/label_typeHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/typeHouseSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <CheckBox
+        android:id="@+id/saleCheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_sale"/>
+
+    <CheckBox
+        android:id="@+id/rentalCheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_rental"/>
+
+    <CheckBox
+        android:id="@+id/rental1Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_rental1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/labelPriceMin"
+            android:text="@string/label_priceMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/labelPriceMax"
+            android:text="@string/label_priceMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/labelPriceMin"
+            android:layout_toRightOf="@+id/labelPriceMin"
+            android:layout_toEndOf="@+id/labelPriceMin"
+            android:layout_marginLeft="104dp"
+            android:layout_marginStart="104dp" />
+
+        <EditText
+            android:id="@+id/priceMaxText"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_priceMax"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/labelPriceMax"
+            android:layout_alignLeft="@+id/labelPriceMax"
+            android:layout_alignStart="@+id/labelPriceMax" />
+
+        <EditText
+            android:id="@+id/priceMinText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_priceMin"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/labelPriceMin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/labelPriceMax"
+            android:layout_toStartOf="@+id/labelPriceMax" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_showMap"
+            android:id="@+id/radioButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_showList"
+            android:id="@+id/radioButton2"
+             />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_titleSearch"
+        android:id="@+id/btn_search" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicar Propiedad"
+        android:id="@+id/btn_publish"
+        />
+</LinearLayout>

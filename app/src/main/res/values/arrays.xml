@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>La Paz</item>
+        <item>Cochabamba</item>
+        <item>Santa Cruz</item>
+        <item>Oruro</item>
+        <item>Potosi</item>
+        <item>Chuquisaca</item>
+        <item>Tarija</item>
+        <item>Beni</item>
+        <item>Pando</item>
+    </string-array>
+    <string-array name="houseType">
+        <item>Casa</item>
+        <item>Departamento</item>
+        <item>Terreno</item>
+        <item>Edificio</item>
+        <item>Oficina</item>
+    </string-array>
+    <string-array name="rentalType">
+        <item>Venta</item>
+        <item>Anticretico</item>
+        <item>Alquiler</item>
+    </string-array>
+    <string-array name="zone">
+        <item>Cala Cala</item>
+        <item>Queru Queru</item>
+        <item>Tupuraya</item>
+        <item>Pacata</item>
+        <item>Sarco</item>
+        <item>Condebamba</item>
+        <item>Tiquipaya</item>
+        <item>Sacaba</item>
+        <item>Colcapirhua</item>
+        <item>Quillacollo</item>
+        <item>La Chimba</item>
+        <item>Vinto</item>
+        <item>Sipe Sipe</item>
+    </string-array>
+</resources>
